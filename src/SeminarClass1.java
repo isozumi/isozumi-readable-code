@@ -21,15 +21,20 @@ public class SeminarClass1 {
 
 		/////////////////////////////////////
 		//変数宣言
-		String output=null;					//メッセージ出力用変数
-		String dataFilePath=null;
 
+		String output=null;					//メッセージ出力用
+		String dataFilePath=null;			//データファイル指定用
+
+		/////////////////////////////////////
+		//読み込みファイルの指定
+		dataFilePath="data/data.txt";
 
 		/////////////////////////////////////
 		//ファイル読み込み
+
 		FileReader fileReader = null;
 		try {
-			fileReader = new FileReader("data/data.txt");
+			fileReader = new FileReader(dataFilePath);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
