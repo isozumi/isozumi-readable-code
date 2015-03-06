@@ -11,18 +11,18 @@ import java.io.IOException;
  * @author isozumi
  *
  */
-public class SeminarClass1 {
+public class recipiDisplay {
 
 	/**
 	 * @param args
-	 * オムライスのレシピを出力する
+	 * レシピ情報を出力する
 	 */
 	public static void main(String[] args) {
 
 		/////////////////////////////////////
 		//変数宣言
 
-		String output=null;					//メッセージ出力用
+		String outputMessage=null;					//メッセージ出力用
 		String dataFilePath=null;			//データファイル指定用
 
 		/////////////////////////////////////
@@ -41,13 +41,14 @@ public class SeminarClass1 {
 		BufferedReader bufferedReader=new BufferedReader(fileReader);
 
 		try {
-			output = bufferedReader.readLine();
+			outputMessage = bufferedReader.readLine();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
+		/////////////////////////////////////
 		//実行結果出力
-		System.out.println(output);
+		System.out.println(outputMessage);
 
 	}
 
