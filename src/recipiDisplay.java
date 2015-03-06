@@ -22,12 +22,15 @@ public class recipiDisplay {
 		/////////////////////////////////////
 		//変数宣言
 
-		String outputMessage=null;					//メッセージ出力用
+		String outputMessage=null;			//メッセージ出力用
 		String dataFilePath=null;			//データファイル指定用
+
 
 		/////////////////////////////////////
 		//読み込みファイルの指定
+
 		dataFilePath="data/data.txt";
+
 
 		/////////////////////////////////////
 		//ファイル読み込み
@@ -45,6 +48,7 @@ public class recipiDisplay {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
 
 		/////////////////////////////////////
 		//実行結果出力
